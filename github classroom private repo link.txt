@@ -1,5 +1,0 @@
-﻿নিচের দুইটা লিংক এর কোন একটাতে ক্লিক করলেই হবে।
-http://bit.ly/react-7
-বা
-https://classroom.github.com/a/A6o6gTRY
-.
