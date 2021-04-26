@@ -23,7 +23,7 @@ const Players = (props) => {
                 <p>Age: {age}</p>
                 <p>Email: <b>{email}</b></p>
                 <p>City: {city}</p>
-                <p>Salary: {salary}</p>
+                <p>Salary: {salary}tk</p>
                 <button onClick={() => {props.selectedPlayer(props.player)}}> <FontAwesomeIcon icon={faClipboardCheck} /> Add to Team</button>
             </div>
             <div className="player-image">

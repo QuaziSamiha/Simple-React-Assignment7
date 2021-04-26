@@ -18,7 +18,7 @@ const Team = (props) => {
                     team.map(player => <li>{player.name}</li>)
                 }
             </ul>
-            <h4>Total Budget: {totalBudget}</h4>
+            <h4>Total Budget: {totalBudget}tk</h4>
         </div>
     );
 };

@@ -3,8 +3,11 @@
 }
 .all-players {
   width: 70%;
+  margin-left: 10%;
 }
 
 .selected-players {
   width: 30%;
+  position: fixed;
+  margin-left: 60%;
 }
