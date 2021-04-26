@@ -14,7 +14,7 @@ const Players = (props) => {
 
     // object destructuring
     const { name, age, email, city, img, salary } = props.player;
-    
+
     return (
         <div className="player">
             {/* <h1>this is {player.name}</h1> */}
@@ -24,7 +24,7 @@ const Players = (props) => {
                 <p>Email: <b>{email}</b></p>
                 <p>City: {city}</p>
                 <p>Salary: {salary}</p>
-                <button> <FontAwesomeIcon icon={faClipboardCheck} /> Add to Team</button>
+                <button onClick={() => {props.selectedPlayer(props.player)}}> <FontAwesomeIcon icon={faClipboardCheck} /> Add to Team</button>
             </div>
             <div className="player-image">
                 <img src={img} alt="" />

@@ -1,0 +1,10 @@
+.cricket-team{
+    border: cadetblue solid 3px;
+    border-radius: 5px;
+    margin: 10%;
+    padding-left: 8px;
+}
+
+.cricket-team h1{
+    text-align: center;
+}
