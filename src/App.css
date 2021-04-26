@@ -2,12 +2,18 @@
   display: flex;
 }
 .all-players {
-  width: 70%;
+  /* width: 70%; */
   margin-left: 10%;
 }
 
 .selected-players {
-  width: 30%;
+  width: 30%; 
   position: fixed;
   margin-left: 60%;
+}
+
+.heading-style{
+  background-color: cadetblue;
+  line-height: 80px;
+  text-align: center;
 }

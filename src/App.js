@@ -3,6 +3,9 @@ import './App.css';
 import Players from './components/Players/Players';
 import Team from './components/Team/Team';
 import playersData from './PlayersData/PlayersData.json';
+// adding bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
@@ -22,15 +25,9 @@ function App() {
     setTeam(newPlayer);
   }
 
-
-  const headingStyle = {
-    backgroundColor: 'cadetblue',
-    lineHeight: '80px',
-    textAlign: 'center'
-  }
   return (
     <div>
-      <h1 style={headingStyle}>Select Player for Team Formation</h1>
+      <h1 className='heading-style'>Select Players for BD Cricket Team Formation</h1>
       <div className='players'>
         <div className="all-players">
           {

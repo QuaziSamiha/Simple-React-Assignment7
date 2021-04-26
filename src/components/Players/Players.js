@@ -16,17 +16,19 @@ const Players = (props) => {
     const { name, age, email, city, img, salary } = props.player;
 
     return (
-        <div className="player">
+        <div className="player row">
             {/* <h1>this is {player.name}</h1> */}
-            <div className="player-info">
+            
+            {/* bootstrap classes are added here */}
+            <div className="player-info col-12 col-sm-6 col-md-6 col-lg-6">
                 <h3>Name: {name}</h3>
                 <p>Age: {age}</p>
                 <p>Email: <b>{email}</b></p>
                 <p>City: {city}</p>
                 <p>Salary: {salary}tk</p>
-                <button onClick={() => {props.selectedPlayer(props.player)}}> <FontAwesomeIcon icon={faClipboardCheck} /> Add to Team</button>
+                <button onClick={() => { props.selectedPlayer(props.player) }}> <FontAwesomeIcon icon={faClipboardCheck} /> Add to Team</button>
             </div>
-            <div className="player-image">
+            <div className="player-image col-12 col-sm-3 col-md-4 col-lg-6">
                 <img src={img} alt="" />
             </div>
         </div>
