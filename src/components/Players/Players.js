@@ -1,4 +1,8 @@
 import React from 'react';
+// fontAwesome is added for bonus marks
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClipboardCheck } from '@fortawesome/free-solid-svg-icons'
+// css file is imported here
 import './Players.css';
 
 const Players = (props) => {
@@ -8,7 +12,9 @@ const Players = (props) => {
     // const player = props.player;
     // console.log(player);
 
+    // object destructuring
     const { name, age, email, city, img, salary } = props.player;
+    
     return (
         <div className="player">
             {/* <h1>this is {player.name}</h1> */}
@@ -18,7 +24,7 @@ const Players = (props) => {
                 <p>Email: <b>{email}</b></p>
                 <p>City: {city}</p>
                 <p>Salary: {salary}</p>
-                <button>Add to Team</button>
+                <button> <FontAwesomeIcon icon={faClipboardCheck} /> Add to Team</button>
             </div>
             <div className="player-image">
                 <img src={img} alt="" />
